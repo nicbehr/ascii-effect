@@ -6,7 +6,9 @@ export class Cell {
         this.color = color;
     }
     draw(ctx) {
+        ctx.fillStyle = "white";
+        ctx.fillText(this.symbol, this.x + 1, this.y + 1);
         ctx.fillStyle = this.color;
-        ctx.fillText(this.symbol, this.x, this.y)
+        ctx.fillText(this.symbol, this.x, this.y);
     }
 }

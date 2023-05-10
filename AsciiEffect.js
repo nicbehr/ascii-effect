@@ -58,7 +58,7 @@ export class AsciiEffect {
                     const averageColorvalue = total / 3;
                     const color = "rgb(" + red + "," + green + "," + blue + ")";
                     const symbol = this.#convertToSymbol(averageColorvalue);
-                    if (total > 200) {
+                    if (total > 100) {
                         this.#imageCellArray.push(new Cell(x, y, symbol, color));
                     }
                 }
@@ -77,6 +77,7 @@ export class AsciiEffect {
             this.#drawImageScaled(this.#image, this.#ctx);
             return;
         }
+        this.#ctx.font = parseInt(cellSize) * 1.5 + "px Verdana";
         this.#scanImage(cellSize)
         this.#drawAscii()
     }
