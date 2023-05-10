@@ -1,6 +1,6 @@
 # ascii-effect
 
-![example for the GUI of this project showing a dark souls figure in ASCII art style](http://url/to/img.png)
+![Alt text](/gui_example/example.jpg?raw=true)
 
 A little ascii-art effect in javascript. Own images can be loaded and converted to ASCII-art.
 Controls for the resolution are included.
